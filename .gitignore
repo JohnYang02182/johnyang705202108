@@ -1,3 +1,4 @@
 # 忽略node js 與 gulp
 */node_modules/
 *.json
+node_modules/
