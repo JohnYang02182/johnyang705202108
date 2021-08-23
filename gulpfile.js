@@ -42,8 +42,8 @@ gulp.task('sass', function(done) {
   
   stream.on('error', function(err) {
     NotifyPopup('Gulp.js', err);
-    console.log(err)
     done(err);
+    this.emit('end');
   });
 
   return stream;
