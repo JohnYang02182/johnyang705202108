@@ -53,9 +53,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if (getTop < getHeight && getBottom > 0) {
       displayScrollElement(el);
     }
-    else {
-      hideScrollElement(el);
-    }
+    
     console.log(getTop);
   }
   /*navbar*/
