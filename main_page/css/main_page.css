@@ -138,8 +138,27 @@ table {
   cursor: pointer;
 }
 
-.nav-outer li a {
+.nav-outer li .menu-list-items {
+  color: #9a9a9a;
+}
+
+.nav-outer li .menu-list-items.nav-list-active {
+  position: relative;
   color: #323232;
+}
+
+.nav-outer li .menu-list-items.nav-list-active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #00b4d8;
+  border-radius: 4px;
 }
 
 .nav-outer .select_language {
@@ -223,6 +242,12 @@ table {
 .hamRotate.menu-open {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-outer li .menu-list-items:hover {
+    color: #323232;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -955,6 +980,12 @@ body {
   width: 100%;
 }
 
+.profile_container .profile_body {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
 .profile_container h2 {
   margin: 48px 0 36px;
   text-align: center;
@@ -965,18 +996,51 @@ body {
 }
 
 .profile_container .content-text {
-  margin: auto;
-  max-width: 900px;
   width: 100%;
   font-weight: lighter;
   line-height: 24px;
 }
 
+.profile_container .content-sub-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 32px;
+  font-weight: 24px;
+  line-height: 28px;
+  color: #6a6a6a;
+}
+
+.profile_container .content-sub-title .sub-title {
+  margin-left: 8px;
+}
+
+.profile_container .content-sub-title:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 14px;
+  background-color: rgba(0, 180, 216, 0.8);
+  border-radius: 8px;
+}
+
 .profile_container .context-image {
   display: block;
-  margin: 36px auto 24px;
-  max-width: 900px;
+  margin: 36px 0 24px;
   width: 100%;
+  border-radius: 16px;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
 }
 
 .profile_container .context-image img {
@@ -1084,6 +1148,9 @@ body {
   }
   .container .section-banner .banner_background.banner-02 {
     top: -150px;
+  }
+  .profile_container .profile_body {
+    padding: 0 16px;
   }
 }
 

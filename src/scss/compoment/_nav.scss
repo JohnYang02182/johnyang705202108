@@ -53,8 +53,24 @@
     color: #323232;
     font-size: 16px;
     cursor: pointer;
-    a {
-      color: #323232;
+    .menu-list-items {
+      color: #9a9a9a;
+      &.nav-list-active {
+        position: relative;
+        color: #323232;
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -4px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 20px;
+          height: 2px;
+          background-color: #00b4d8;
+          border-radius: 4px;
+        }
+      }
     }
   }
   .select_language {
@@ -115,7 +131,18 @@
     transform: rotate(45deg);
   }
 }
-
+@media screen and (min-width: 768px){
+  .nav-outer {
+    li {
+      .menu-list-items {
+        &:hover {
+          color: #323232;
+        }
+      }
+    }
+  }
+    
+}
 @media screen and (max-width: 576px) {
   .nav-outer {
     height: unset;

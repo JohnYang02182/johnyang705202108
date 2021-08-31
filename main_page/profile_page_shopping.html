@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="./font/setofont.ttf">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+	<link rel="stylesheet" href="css/main_page.css">
+	<title>john's website</title>
+</head>
+<body>
+	<div class="nav-outer">
+		<div class="nav">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo">
+			</div>
+			<ul class="menu-list">
+				<li>
+					<a href="https://johnyang02182.github.io/johnyang705202108/index.html" class="menu-list-items nav-list-active">作品集</a>
+				</li>
+				<li>
+					<a href="https://johnyang02182.github.io/johnyang705202108/my-profile_page.html" class="menu-list-items">關於我</a>
+				</li>
+				<select class="select_language">
+					<option value="0">中文</option>
+				    <option value="1">日本語</option>
+				    <!-- <option value="2">English</option> -->
+				</select>
+			</ul>
+			<div class="menu-buttom">
+				<svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="60">
+				  <path
+				        class="line top"
+				        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+				  <path
+				        class="line middle"
+				        d="m 30,50 h 40" />
+				  <path
+				        class="line bottom"
+				        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="container-outer">
+		<div class="container profile_container">
+			<div class="profile_head-banner">
+				<img src="img/shopping_page_banner.png" alt="banner">
+			</div>
+			<div class="profile_body">
+				<h2>巴哈商城網頁更新</h2>
+				<div class="content-sub-title">
+					<p class="sub-title">專案過程：</p>
+				</div>
+				<div class="content-text">
+					巴哈商城以長時間未經過更新以及維護，故需求方決定在不動到資料底層的情況下，希望將頁面全面更新。<br><br>而因為時間較趕的緣故，此專案沒有留下設計稿，在剛結束草稿階段後，就直接進到coding的階段。<br><br>在過程中考慮到節省開發時間，將首頁的卡牌樣式、輪播區、訂單的時間軸等ui組建用scss的特性建立變數儲存，增加可以反覆利用的靈活性。
+					<br><br>
+				</div>
+				<div class="context-image">
+					<img src="img/shopping_demo_01.png" alt="banner">
+				</div>
+				<div class="content-sub-title">
+					<p class="sub-title">感想總結：</p>
+				</div>
+				<div class="content-text">
+					在巴哈商城廣泛的應用變數儲存樣式，但因為對SCSS不熟悉緣故，SCSS巢狀結構的部分用了過多層導致後續維護不易。之後再撰寫SCSS巢狀時為自己訂下不可超過三層的規則。以防止類似失誤再次上演。<br><br>
+					附上連結：<a href="https://buy.gamer.com.tw/index.php" target="_blank">https://buy.gamer.com.tw/index.php</a>
+					<br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="list-contect-me">
+			<p class="headline_02">更多資訊</p>
+			<ul class="footer_list">
+				<li>
+					<a href="https://github.com/JohnYang02182/johnyang705202108/tree/main/main_page">
+						<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/john-yang-7709b5118/">
+						<img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="linkeIn">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.behance.net/john70581">
+						<img src="img/behance_icon.png" alt="behance">
+					</a>
+				</li>
+				<li>
+					<a href="john705810420@gmail.com">
+						<img src="img/email_icon.png" alt="email">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<p>JohnYang All Rights Reserved.</p>
+	</div>
+</body>
+</html>
