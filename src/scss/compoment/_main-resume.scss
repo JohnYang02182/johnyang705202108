@@ -634,6 +634,11 @@ body {
 			}
 		}
 	}
+	.primary-button {
+		&:hover {
+			background-color: #4ea2c1;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
