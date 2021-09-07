@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function(){
   handleAnimation();
   window.addEventListener("scroll", () => {
     handleAnimation();
-    console.log("a");
   });
 
   function handleAnimation() {
@@ -53,8 +52,6 @@ document.addEventListener('DOMContentLoaded', function(){
     if (getTop < getHeight && getBottom > 0) {
       displayScrollElement(el);
     }
-    
-    console.log(getTop);
   }
   /*navbar*/
 
